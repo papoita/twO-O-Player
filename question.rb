@@ -15,7 +15,7 @@ class Question
   end
   
   def answer_eval()
-    if @player_answer === correct_answer
+    if @player_answer == correct_answer
       puts "Good Job! Your answer is correct"
       return true
     end
