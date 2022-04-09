@@ -3,25 +3,12 @@ require 'player'
 
 class Turn()
 
-  def initialize()
-    new_question = Question.new()
-    current_player = Player.name
-  end
-
-  def current_player
-    if Player.name == @player1.name
-      @current_player = player1
-    else
-      @current_player = player2
-    end
-  end
-
-  def current_question
-    new_question = Question.new()
+  def initialize(player)
+    @new_question = Question.new()
+    @current_player = player
   end
 
   def remaining_lives()
-  if new_question.answer_eval === false
-    Player.lives -= 1
+   puts @current_player.lives
   end
 end
