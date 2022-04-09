@@ -8,7 +8,13 @@ class Turn()
     @current_player = player
   end
 
-  def remaining_lives()
-   puts @current_player.lives
-  end
+  def ask_question
+    @new_question.make_question
+    if !@new_question.answer_eval
+       @current_player.lost_life 
+       puts " #{@current_player.lives} remaining"
+       #puts "#{@current_player.lost_life} lives remaining"
+    end
+
+
 end
