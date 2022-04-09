@@ -41,7 +41,7 @@ if @lives > 0, then @lives -= 1 els
 - a game over method which checks if player1.lives = 0, then player 2 is the winner, else if player2.lives = 0, player 1 wins. 
 - Finally, winner.name Wins and end the game
 
-# Index.rb
+# Main.rb
 - Will need an index.rb to call all of the classes, this will require the game class.
 - players = ARGV
 - new_game = Game.new(players) 
